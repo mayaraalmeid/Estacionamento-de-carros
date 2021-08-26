@@ -49,7 +49,8 @@ rsu= cursor.fetchall()
 for l in rsu:
     cod = str(l[5])
     if (codigo == cod):
-        print ("Tente novamente")
+        codigo = (random.randrange(1000,999999999))
+
 
 cursor.execute('INSERT INTO clientes (placa, modelo,cor, codigo) VALUES (%s, %s, %s, %s)', (placa, modelo, cor, codigo))
 con.commit()
