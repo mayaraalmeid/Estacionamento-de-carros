@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Cadastre seu carro
+</title>
+</head>
+<style>
+body {
+background-color: #4682B4
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  background-color: white;
+  color:#191970;
+  text-align: center;
+  width: 400px;
+}
+</style>
+<body>
+<div class="flex-box">
+<div class="content-box">
+<p>
+<h1><center>
+Cadastre seu carro
+</center></h1>
+
+<form action="/cgi-bin/cadverf.py" method="get">
+<center>Digite a placa: <input type="text" value="" name="placa"><br>
+<br>
+Digite o modelo: <input type="text" value="" name="modelo"><br>
+<br>
+Digite a cor: <input type="text" value="" name="cor"><br>
+<br>
+
+<button style="background-color:#4682B4; border-color:#191970; color:black" type="submit">Estacionar</button>
+<button style="background-color:#4682B4; border-color:#191970; color:black" type="reset">Cancelar</button></center>
+</p>
+</div>
+</div>
+</form>
+<center>
+<img src="estaciocar.png" alt="some text" width=300 height=300>
+</center>
+</body>
+</html>
+
